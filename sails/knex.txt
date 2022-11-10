@@ -1,0 +1,20 @@
+
+====> KNEX in sails <====
+
+http://perkframework.com/v1/guides/database-migrations-knex.html
+
+http://knexjs.org/
+
+-Steps
+1) npm install knex -g
+2) create knexfile.js
+
+
+for latest migration run : 
+knex migrate:latest --env=staging
+
+knex seed:run --specific=version.js  --env=staging // run particular seeder
+
+knex seed:run --env=staging
+ 
+NODE_ENV=staging pm2 start app.js
