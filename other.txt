@@ -1,0 +1,13 @@
+
+MongoDB command:::
+https://tecadmin.net/tutorial/mongodb/show-collection/
+
+==> update the node version
+https://bytearcher.com/articles/ways-to-get-the-latest-node.js-version-on-a-mac/ 
+brew upgrade node  
+brew search node used to search the node 
+brew install node@10 brew link node@10
+
+node ==> npm start
+
+angular  ===> ng serve

@@ -1,0 +1,4 @@
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+sudo service apache2 restart
+Allow from 150.129.104.17
+Allow from 49.34.164.205

@@ -1,0 +1,40 @@
+ *********** Sails Js ************ 
+
+===============================> JWT token generate in sails js <================================== 	
+Package :
+$ npm install jsonwebtoken
+Reference: https://www.npmjs.com/package/jsonwebtoken
+
+Generate the token :
+return res.json({token: jwt.sign({ emailAddress, fullname, id}, 'RESTFULAPIs')});
+
+Decode the token :
+jwt.decode(generatedToken, {complete: true});
+
+
+======= ========= ========= =========> async method <==================================
+https://caolan.github.io/async/mapValues.js.html
+npm install --save async
+
+
+===================================> redis server <==================================
+https://redis.io/topics/quickstart
+
+
+=====================================> swagger < ==================================
+https://stackoverflow.com/questions/30671160/swagger-sails-js
+
+
+===> for latest migration run : 
+knex migrate:latest --env=staging
+
+knex seed:run --specific=version.js  --env=staging // run particular seeder
+
+NODE_ENV=staging pm2 start app.js
+
+
+sails.config.appPath get full path
+
+sails.config.custom.baseUrl
+
+require('path').resolve(sails.config.appPath, 'assets/images')

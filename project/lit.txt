@@ -1,0 +1,32 @@
+******* LIT project ******* 
+
+=> DB access:
+http://35.165.84.136/phpmyadmin
+user: root
+password: JPCkWtLnd5grfOZ5
+
+=> AWS Credential:
+https://aws.amazon.com/
+litapp2023@gmail.com
+GLiWkuT7u92X
+
+=> Google account credential:
+litapp2023@gmail.com
+ffnN1MQf3ePL
+
+Admin credential:
+url: http://35.165.84.136:1337/admin/login
+email Id: admin@admin.com
+password: 123456
+
+DB credential:
+http://35.165.84.136/phpmyadmin/index.php
+username :root
+Password : JPCkWtLnd5grfOZ5
+
+figma:
+https://www.figma.com/file/9aPVkqQlTgu8BxvTRbPNdp/LIT_app?node-id=21%3A3
+
+google sheet:
+https://docs.google.com/spreadsheets/d/1e7jQPF98lUPbOv2SXLj3pYShL_RCOkjwKiNDLNX246A/edit#gid=1255904942
+task tracker: https://docs.google.com/spreadsheets/d/1v32lPpyTuVPOg2RFUgKOHLF-K4KE4Jv7sS4l9V8wn00/edit#gid=0

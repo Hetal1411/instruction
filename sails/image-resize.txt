@@ -1,0 +1,16 @@
+Image resize :
+
+=> gm(files[0].fd)
+        .resize(width, height)
+        .write(files[0].fd, (err) => {
+          if (err) {
+            console.log(err);
+          }
+        });
+
+
+=>brew install imagemagick
+
+=>brew install graphicsmagick
+
+=>npm install gm

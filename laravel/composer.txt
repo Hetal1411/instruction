@@ -1,0 +1,49 @@
+Larval Composer 
+
+========> For ignoring some of dependencies :=========>
+composer install --ignore-platform-reqs
+
+When memory size exhaust:
+COMPOSER_MEMORY_LIMIT=-1 composer update
+=============================================>
+
+
+Setup project :
+=> Install composer: 
+composer install --ignore-platform-reqs
+Error and solutions :
+error:  preg_match(): Allocation of JIT memory failed, PCRE JIT will be disabled. This is likely caused by security restrictions. Either grant PHP permission to allocate executable memory, or set pcre.jit=0  
+Solution :
+1. Run command “php --ini” and get the location of php.ini file 
+2. Sudo nano php.ini_path
+3. And add “pcre.jit = 0”
+4. sudo apachectl stop
+5. sudo apachectl start
+
+
+=> Link storage
+php artisan storage:link
+
+=> Copy env: 
+cp .env.live .env
+
+composer dump-autoload sudo chmod -R 777 storage/ bootstrap/cache/
+
+
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
+php artisan config:cache
+
+php artisan config:cache 
+php artisan config:clear   
+php artisan cache:clear
+
+
+============> xampp instillation <=================
+https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/7.4.25/
+Install installer xamp not vm
+
+Xampp remove:  sudo rm -rf /Applications/XAMPP
+sudo rm -rf ~/.bitnami
+

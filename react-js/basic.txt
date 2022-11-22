@@ -1,0 +1,129 @@
+************** React js ************** 
+
+
+============> Important topic <=============
+Hooks, hooks with redux, context, react-router, component, nested component, props, state, Higher-Order Components
+- next js: 
+ https://nextjs.org/learn/basics/create-nextjs-app?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website
+============> Important topic end <=============
+
+=> Pagination on scroll :
+https://www.pluralsight.com/guides/how-to-implement-infinite-scrolling-with-reactjs
+
+Basic:
+https://reactjs.org/docs/hello-world.html
+https://www.w3schools.com/REACT/DEFAULT.ASP
+.
+Routing:
+https://www.freecodecamp.org/news/react-router-in-5-minutes/
+
+Reduct:
+https://www.freecodecamp.org/news/a-beginners-guide-to-redux-9f652cbdc519/
+
+Difference between props and state:
+=> States:
+	- states are mutable(changeable)
+	- modifie using this.setState() method
+	- define component itself 
+	
+=>Props;
+	- props are immutable(readonly)
+	- props can not be modified
+	- props is a property of parent class 
+
+
+
+https://medium.freecodecamp.org/why-arrow-functions-and-bind-in-reacts-render-are-problematic-f1c08b060e36
+
+Redux form : https://medium.com/wolox-driving-innovation/https-medium-com-wolox-driving-innovation-easy-forms-in-react-native-with-redux-form-1cdc16a9a889
+
+https://medium.com/@machnicki/handle-events-in-react-with-arrow-functions-ede88184bbb
+
+How to avoid Arrow function :
+https://medium.freecodecamp.org/react-pattern-extract-child-components-to-avoid-binding-e3ad8310725e
+
+Style guide : https://github.com/airbnb/javascript/tree/master/react
+
+https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
+
+https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+
+We have to follow all these style guide and concepts
+
+…stateName: … operator is used to retains the previous state of the array or object   
+
+==============> HOOKS <==============
+- Hooks are the new features in react version 16.8
+- It allows you to use state and other react features without writing a class.
+- It doesn’t work inside classes 
+- Hooks should always be used at the to level of react function
+- support in node version 6 and above and NPM version 5.2 or above 
+
+=> useState hooks
+	const [count,setCount] = useState(intialValue);
+    - setCount is the function to change the current and value and set on count variable. 
+
+	useState use previous state:
+	- syntax : setCount(prevCount => preCount + 1)
+
+	useState use with object: 
+	- syntax : const [name,setName]=useState({ firstName: ‘test’,lastName:’test’})
+			access variable value : name.firstName and name.lastName
+
+	useState use with array:
+	- syntax : const [arr,setArray] = useState([])
+	set items : setArray([…are,{id: 1,name:’test’}])
+
+	
+=> useEffect hook:
+	it is a close replacement for componentDidMount, componentDidUpdate and componentWillUnmount
+	syntax : useEffect(()=>{ //access update value})
+
+	-conditionally run useEffect :
+	useEffect(() => {
+				},[array of value to be affected function event or dependencies array])
+		
+	-clean up code
+	useEffect(() => {
+					return(){
+						//clean up code 	
+					}
+				},[array of value to be affected function event or dependencies array])
+	
+=> useContext hook:
+	it is used to use the createContext value 
+	syntax : var getcontextValue = useContext(createContextName)
+
+=> useReducer hook:
+	it is used for state management 
+	it is an alternative to useState 
+	useState is built using useReducer
+	syntax : useReducer(action,intialValue)
+
+=> useCallbak hook:
+	it is called based on its dependencies changed 
+	syntax: useCallbak(action,[state to be used in action])
+
+=> useMemo hook:
+	same as the useCallbak
+	syntax: useMemo(action,[state to be used in action])
+
+=> useRef hook:	
+	it is used for get the focus on the input controller when component load 
+	syntax : const inputRef = useRef(null);
+			inputRef.current.focus()
+
+=> Custome hook:
+	it is a nothing but javascript function whose name start with “use”
+
+
+==> Proptype
+https://reactjs.org/docs/typechecking-with-proptypes.html
+
+Default props example :
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+
+h_e_t_g_a_b_u
+het gabu

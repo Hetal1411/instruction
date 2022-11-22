@@ -1,0 +1,32 @@
+*********** Install redis server: ***********
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
+
+File : sudo nano /etc/redis/redis.conf
+Set param :
+maxmemory 128mb
+memory-policy allkeys-lru 
+
+sudo nano /etc/systemd/system/redis.service
+Set:
+Description=Redis In-Memory Data Store
+After=network.target
+
+[Service]
+User=redis
+Group=redis
+ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf
+ExecStop=/usr/local/bin/redis-cli shutdown
+Restart=always
+
+Uninstall redis :
+https://learn2torials.com/a/how-to-uninstall-redis-server-from-ubuntu
+
+sudo lsof -i:3306
+sudo kill -9 PID
+sudo service mysql restart
+
+==> generate ssh 
+ssh-keygen -t rsa -C “hetal.gabu@logisticinfotech.co.in” -b 4096
+cat ~/.ssh/id_rsa.pub
+

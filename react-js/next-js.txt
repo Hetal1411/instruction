@@ -1,0 +1,16 @@
+basic setup
+
+https://nextjs.org/docs
+
+-> Create project using command 
+npx create-next-app@latest
+
+
+-> run project
+npm run dev
+
+
+=> style component install
+npm i styled-components
+npm install --save-dev babel-plugin-styled-components
+https://medium.com/nerd-for-tech/using-next-js-with-styled-components-easy-dfff3849e4f1

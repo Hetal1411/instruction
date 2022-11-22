@@ -1,0 +1,68 @@
+Laravel echo server
+
+https://www.npmjs.com/package/laravel-echo-server
+https://github.com/tlaverdure/laravel-echo-server
+
+================.  Change in ENV ==================
+BROADCAST_DRIVER=redis
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=525600
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+================. end  Change in ENV ==================
+
+Client side installation for socket connection:
+https://github.com/balderdashy/sails.io.js?files=1
+
+Start laravel echo server in background:
+https://github.com/tlaverdure/laravel-echo-server/issues/178 
+
+Laravel event generate:
+https://laravel.com/docs/8.x/events
+
+
+1. why channel generate with prefix ?  solution : just comment redis prefix in config/database file
+
+
+laravel-echo-server.json example:
+    {
+        "authHost": "http://localhost/project/munasabti_laravel/public",
+        "authEndpoint": "/broadcasting/auth",
+        "clients": [
+            {
+                "appId": "APP_ID",
+                "key": "df50b5699eeebfa172cd925f15700245"
+            }
+        ],
+        "database": "redis",
+        "databaseConfig": {
+            "redis": {},
+            "sqlite": {
+                "databasePath": "/database/laravel-echo-server.sqlite"
+            }
+        },
+        "devMode": false,
+        "host": null,
+        "port": "6001",
+        "protocol": "http",
+        "socketio": {},
+        "secureOptions": 67108864,
+        "sslCertPath": "",
+        "sslKeyPath": "",
+        "sslCertChainPath": "",
+        "sslPassphrase": "",
+        "subscribers": {
+            "http": true,
+            "redis": true
+        },
+        "apiOriginAllow": {
+            "allowCors": false,
+            "allowOrigin": "http://127.0.0.1/",
+            "allowMethods": "GET, POST",
+            "allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+        }
+    }

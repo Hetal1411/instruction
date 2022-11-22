@@ -1,0 +1,14 @@
+
+meement AWS
+Email: mcondivisom@gmail.com
+Psw: M33ment!
+
+Front server code step:
+ssh -i "meemintaws.cer" ubuntu@18.102.99.53
+cd /var/www/html/meementfront
+git pull
+npm run build
+pm2 restart 1
+
+figma:
+https://www.figma.com/file/GEyqsvjEisoe5GlLagPira/MeeMent?node-id=238%3A2

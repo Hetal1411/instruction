@@ -1,0 +1,19 @@
+Connection with database :
+
+=> changes made in the config.datastore
+
+module.exports.datastores = {
+  default: {
+	adapter: 'sails-mysql',
+    	url: 'mysql://root@localhost:3306/sailsdemo',
+ 	 },
+};
+
+Install npm
+
+npm install sails-mysql --save --save-exact
+
+Start : sails lift 
+
+   
+

@@ -1,0 +1,29 @@
+Notification send to the manager and owner 
+
+1 ) Auto Close Tag
+2 ) CSS Formatter
+3 ) DotENV
+4 ) ESLint
+5 ) IntelliSense for CSS class names in HTML
+6 ) Laravel 5 Snippets
+7 ) Laravel Artisan
+8 ) Laravel goto view
+9 ) PHP Intelephense
+10) PHP Namespace Resolver
+
+
+Artisan: Max Buffer
+=> 2048009999999999
+
+settings.json
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "namespaceResolver.autoSort": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "artisan.maxBuffer": 2048009999999999,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+}

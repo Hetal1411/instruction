@@ -1,0 +1,6 @@
+
+Open boot menu :
+press delete button at time of load screen
+Select peripheral 
+Set ACHI in SATA mode
+Save and exit

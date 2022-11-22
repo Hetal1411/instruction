@@ -1,0 +1,6 @@
+
+==> live server ssh
+ssh -i ~/.ssh/id_rsa -p 22443 glambuapp@3.133.171.28
+cd www/backend_new/
+knex migrate:latest --env=staging
+pm2 restart 0

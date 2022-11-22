@@ -1,0 +1,4 @@
+http://api.smsala.com/api/SendSMS?api_id=API379956584870
+&api_password=Y6GMjT0wE7
+&sms_type=T&encoding=T&sender_id=MDhara
+&phonenumber=+919276809303&textmessage=helllo
