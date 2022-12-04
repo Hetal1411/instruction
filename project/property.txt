@@ -1,0 +1,5 @@
+admin:
+https://admin.homeproiq.com/admin/login
+admin@admin.com
+123456
+
