@@ -11,3 +11,9 @@ brew install node@10 brew link node@10
 node ==> npm start
 
 angular  ===> ng serve
+   
+IP config:
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+sudo service apache2 restart
+Allow from 114.31.164.203
+Allow from 42.106.29.42
