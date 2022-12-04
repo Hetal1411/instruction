@@ -16,3 +16,5 @@ git@103.250.188.226:nilesh/pharmx_sails.git
 veciapp:
 git@123.201.19.225:nilesh/vecisails.git
 
+hang:
+git@103.250.188.226:Darkroom/HangSails.git
