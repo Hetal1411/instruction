@@ -4,3 +4,14 @@ ssh -i ~/.ssh/id_rsa -p 22443 glambuapp@3.133.171.28
 cd www/backend_new/
 knex migrate:latest --env=staging
 pm2 restart 0
+
+https://988067126416.signin.aws.amazon.com/console
+hetalgabu
+L#ErkGKGKY4AbHrStFI*Rp
+
+https://988067126416.signin.aws.amazon.com/console
+Username logistic
+t^Rl@Rb8H8DJ3k5Ik3zER$$MqEVMHrv*T$ynBlSO41Vach!B15
+
+admin@admin.com
+pCvjuRD8bdl@Z%Y
