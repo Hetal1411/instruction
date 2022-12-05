@@ -5,6 +5,9 @@ cd www/backend_new/
 knex migrate:latest --env=staging
 pm2 restart 0
 
+add key:
+vi .ssh/authorized_keys
+
 https://988067126416.signin.aws.amazon.com/console
 hetalgabu
 L#ErkGKGKY4AbHrStFI*Rp
